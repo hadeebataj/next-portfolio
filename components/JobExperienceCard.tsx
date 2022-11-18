@@ -17,10 +17,10 @@ const JobExperienceCard = ({ experience }: Props) => {
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className=" rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
+        className=" rounded-full xl:w-[150px] xl:h-[150px] lg:w-[200px] lg:h-[200px] md:w-[100px] md:h-[100px] sm:w-[50px] sm:h-[50px] object-cover object-center"
         src={urlFor(experience?.companyImage).url()}
       />
-      <div className="px-0 py-0 md:px-10">
+      <div className="px-0 py-0 md:px-10 overflow-y-scroll max-h-64">
         <h4 className="text-4xl font-light">{experience?.jobTitle}</h4>
         <p className="font-bold text-2xl mt-1 ">{experience?.company}</p>
         <div className="flex space-x-2 my-2">
@@ -43,7 +43,7 @@ const JobExperienceCard = ({ experience }: Props) => {
             <Moment format="MMM YYYY">{experience?.dateEnded}</Moment>
           )}
         </p>
-        <ul className="list-disc space-y-4 ml-5 text-lg overflow-y-scroll max-h-32">
+        <ul className="list-disc space-y-4 ml-5 text-lg ">
           {experience?.points?.map((point, i) => {
             return <li key={i + 1}>{point}</li>;
           })}

@@ -25,7 +25,15 @@ const About = (props: Props) => {
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">Here is little background</h4>
 
-        <p className="text-base">{/* description here */}</p>
+        <p className="text-base">
+          I’m a frontend developer with 2+ years of experience in
+          Typescript/React, HTML/CSS, and I am exploring Node.js, I have been
+          working as a consultant to Microsoft teams on the design and
+          development of team collaboration applications (Microsoft Teams) and
+          cyber security based applications (Azure Active Directory). I’m
+          excited to bring my passion for clean, responsive design to new
+          clients located worldwide.
+        </p>
       </div>
     </motion.div>
   );

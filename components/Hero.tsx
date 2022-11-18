@@ -7,23 +7,24 @@ import { PageInfo } from "../typings";
 import BackgroundCircles from "./BackgroundCircles";
 
 type Props = {
-  // pageInfo: PageInfo;
+  pageInfo: PageInfo;
 };
 
-const Hero = ({}: Props) => {
+const Hero = ({ pageInfo }: Props) => {
   const [text, count] = useTypewriter({
     words: [
-      `Hi! This is Hadeeba.`,
-      "UI/UX Designer and Developer",
-      "<DesignIsThoughtsVisualised />",
+      `Hi! I'm Hadeeba.`,
+      "UI/UX Designer & Developer",
+      "Making designs simple.",
     ],
     loop: true,
     delaySpeed: 2000,
   });
+  console.log(pageInfo);
 
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-      <BackgroundCircles />
+    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden bg-[url('/casey-horner-RmoWqDCqN2E-unsplash.jpg')] bg-cover bg-opacity-15">
+      {/* <BackgroundCircles /> */}
       {/* <Image
         src="https://cdn.sanity.io/images/j1xooykw/production/b5d51b77d7c0ae61b591e21e1827d2d8e9650f86-460x460.jpg"
         // src={urlFor(pageInfo?.heroImage).url()}
@@ -38,7 +39,7 @@ const Hero = ({}: Props) => {
         alt=""
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase tracking-[15px] text-gray-500 pb-2">
+        <h2 className="text-sm uppercase tracking-[8px] text-gray-300 pb-2">
           Frontend Engineer
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10">
