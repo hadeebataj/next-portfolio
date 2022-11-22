@@ -19,36 +19,36 @@ const ContactMe = (props: Props) => {
 
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase xs:tracking-[10px] md:tracking-[20px] text-gray-500 text-2xl">
         Contact Me
       </h3>
       <div className="mt-40">
-        <h4 className="text-4xl font-semibold text-center">
+        <h4 className="md:text-4xl xs:text-xl sm:text-2xl font-semibold text-center">
           I have what you need.{" "}
           <span className="decoration-[#F7AB0A]/50 underline">Let us talk</span>
         </h4>
       </div>
       <div className="space-y-4">
         <div className="flex items-center space-x-5 justify-center">
-          <PhoneIcon className="text-[#F7AB0A] animate-pulse h-7 w-7" />
-          <p className="text-2xl">+44 7456504990</p>
+          <PhoneIcon className="text-[#F7AB0A] animate-pulse sm:h-6 sm:w-6 xs:h-4 xs:w-4" />
+          <p className="sm:text-2xl xs:text-lg">+44 7456504990</p>
         </div>
 
         <div className="flex items-center space-x-5 justify-center">
-          <EnvelopeIcon className="text-[#F7AB0A] animate-pulse h-7 w-7" />
-          <p className="text-2xl">hadeebataj@gmail.com</p>
+          <EnvelopeIcon className="text-[#F7AB0A] animate-pulse sm:h-6 sm:w-6 xs:h-4 xs:w-4" />
+          <p className="sm:text-2xl xs:text-lg">hadeebataj@gmail.com</p>
         </div>
 
         <div className="flex items-center space-x-5 justify-center">
-          <MapPinIcon className="text-[#F7AB0A] animate-pulse h-7 w-7" />
-          <p className="text-2xl">Oakeshott Avenue, London</p>
+          <MapPinIcon className="text-[#F7AB0A] animate-pulse sm:h-6 sm:w-6 xs:h-4 xs:w-4" />
+          <p className="sm:text-2xl xs:text-lg">Oakeshott Avenue, London</p>
         </div>
       </div>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col space-y-2 w-fit mx-auto"
       >
-        <div className="flex space-x-2">
+        <div className="flex space-x-2 xs:flex-col xs:space-y-2 xs:space-x-0 sm:flex-row ">
           <input
             {...register("name")}
             placeholder="Name"

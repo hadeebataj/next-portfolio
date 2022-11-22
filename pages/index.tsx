@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import Testimonial from "../components/Testimonial";
 import WorkExperience from "../components/WorkExperience";
 import { Experience, PageInfo, Project, Skill, Social } from "../typings";
 import { fetchExperiences } from "../utils/fetchExperiences";
@@ -52,6 +53,10 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
 
       <section id="projects" className="snap-start">
         <Projects projects={projects} />
+      </section>
+
+      <section id="testimonial" className="snap-start">
+        <Testimonial />
       </section>
 
       <section id="contact-me" className="snap-start">
