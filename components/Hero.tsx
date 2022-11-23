@@ -20,24 +20,23 @@ const Hero = ({ pageInfo }: Props) => {
     loop: true,
     delaySpeed: 2000,
   });
-  console.log(pageInfo);
 
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden bg-[url('/hero-wallpaper.png')] bg-center bg-cover bg-opacity-15">
       {/* <BackgroundCircles /> */}
-      {/* <Image
+      <Image
         src="https://cdn.sanity.io/images/j1xooykw/production/b5d51b77d7c0ae61b591e21e1827d2d8e9650f86-460x460.jpg"
         // src={urlFor(pageInfo?.heroImage).url()}
-        height={32}
-        width={32}
-        className="relative rounded-full mx-auto object-cover"
+        height={128}
+        width={128}
+        className="relative rounded-full mx-auto"
         alt=""
-      /> */}
-      <img
+      />
+      {/* <img
         className="relative rounded-full h-32 w-32 mx-auto"
         src="https://cdn.sanity.io/images/j1xooykw/production/b5d51b77d7c0ae61b591e21e1827d2d8e9650f86-460x460.jpg"
         alt=""
-      />
+      /> */}
       <div className="z-20">
         <h2 className="text-sm uppercase tracking-[8px] text-gray-100 font-medium pb-2">
           Frontend Engineer

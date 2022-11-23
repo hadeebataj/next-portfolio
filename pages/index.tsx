@@ -66,8 +66,10 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center hover:">
-            <img
-              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+            <Image
+              height={40}
+              width={40}
+              className="rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
               src="https://cdn.sanity.io/images/j1xooykw/production/b5d51b77d7c0ae61b591e21e1827d2d8e9650f86-460x460.jpg"
               alt=""
             />
