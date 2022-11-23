@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Portfolio built with Typescript, React, Redux, Nextjs, Sanity CMS with Vercel deployment
+## Link to portfolio: https://next-portfolio-hadeebataj.vercel.app
+
+
+
+
 
 ## Getting Started
 
