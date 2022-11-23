@@ -6,11 +6,11 @@ import { urlFor } from "../sanity";
 import { PageInfo } from "../typings";
 import BackgroundCircles from "./BackgroundCircles";
 
-type Props = {
-  pageInfo: PageInfo;
-};
+// type Props = {
+//   pageInfo: PageInfo;
+// };
 
-const Hero = ({ pageInfo }: Props) => {
+const Hero = () => {
   const [text, count] = useTypewriter({
     words: [
       `Hi! I'm Hadeeba.`,
@@ -23,7 +23,6 @@ const Hero = ({ pageInfo }: Props) => {
 
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden bg-[url('/hero-wallpaper.png')] bg-center bg-cover bg-opacity-15">
-      {/* <BackgroundCircles /> */}
       <Image
         src="https://cdn.sanity.io/images/j1xooykw/production/b5d51b77d7c0ae61b591e21e1827d2d8e9650f86-460x460.jpg"
         // src={urlFor(pageInfo?.heroImage).url()}
@@ -32,11 +31,6 @@ const Hero = ({ pageInfo }: Props) => {
         className="relative rounded-full mx-auto"
         alt=""
       />
-      {/* <img
-        className="relative rounded-full h-32 w-32 mx-auto"
-        src="https://cdn.sanity.io/images/j1xooykw/production/b5d51b77d7c0ae61b591e21e1827d2d8e9650f86-460x460.jpg"
-        alt=""
-      /> */}
       <div className="z-20">
         <h2 className="text-sm uppercase tracking-[8px] text-gray-100 font-medium pb-2">
           Frontend Engineer
