@@ -1,6 +1,7 @@
 ## Portfolio built with Typescript, React, Redux, Nextjs, Sanity CMS with Vercel deployment
 ## Link to portfolio: https://next-portfolio-hadeebataj.vercel.app
 
+<img width="978" alt="portfolio_performance_desktop" src="https://user-images.githubusercontent.com/61531844/214322418-4f9f1b8a-e9c3-4ec1-b310-f817ea2b430b.png">
 
 
 
