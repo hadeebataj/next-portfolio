@@ -7,3 +7,5 @@ export const fetchSocials = async () => {
   // console.log("fetching", socials);
   return socials;
 };
+
+
