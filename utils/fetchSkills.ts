@@ -7,3 +7,5 @@ export const fetchSkills = async () => {
   // console.log("fetching", skills);
   return skills;
 };
+
+
