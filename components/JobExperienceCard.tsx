@@ -11,7 +11,7 @@ type Props = {
 
 const JobExperienceCard = ({ experience }: Props) => {
   return (
-    <article className="flex flex-col h-96 rounded-lg items-left space-y-7 xs:overflow-y-scroll xs:max-h-96 sm:overflow-y-scroll sm:max-h-96 md:overflow-y-scroll md:max-h-96 flex-shrink-0 w-[500px] xs:w-[350px] md:w-[600px] xl:w-[900px] snap-start bg-[#292929] hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden ">
+    <article className="flex flex-col h-120 rounded-lg items-left space-y-7 xs:overflow-y-scroll xs:max-h-96 sm:overflow-y-scroll sm:max-h-96 md:overflow-y-scroll md:max-h-96 flex-shrink-0 w-[500px] xs:w-[350px] md:w-[600px] xl:w-[900px] snap-start bg-[#292929] hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden ">
       {/* <motion.img
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 1.2 }}
@@ -53,9 +53,9 @@ const JobExperienceCard = ({ experience }: Props) => {
           </p>
         </div>
         <div className="lg:w-3/5 lg:overflow-y-scroll ">
-          <ul className="list-disc space-y-4 ml-5 text-lg xs:space-y-2 xs:text-sm">
+          <ul className="list-disc space-y-4 ml-5 text-lg xs:space-y-2 xs:text-sm overflow-y-hidden">
             {experience?.points?.map((point, i) => {
-              return <li key={i + 1}>{point}</li>;
+              return <li key={i + 1}>• {point}</li>;
             })}
           </ul>
         </div>

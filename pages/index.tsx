@@ -10,12 +10,13 @@ import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Testimonial from "../components/Testimonial";
 import WorkExperience from "../components/WorkExperience";
-import { Experience, PageInfo, Project, Skill, Social } from "../typings";
+import { Experience, Project, Skill, Social } from "../typings";
 import { fetchExperiences } from "../utils/fetchExperiences";
-import { fetchPageInfo } from "../utils/fetchPageInfo";
 import { fetchProjects } from "../utils/fetchProjects";
 import { fetchSkills } from "../utils/fetchSkills";
 import { fetchSocials } from "../utils/fetchSocials";
+import "../styles/Home.module.css";
+import { useEffect } from "react";
 
 type Props = {
   // pageInfo: PageInfo;
@@ -26,6 +27,19 @@ type Props = {
 };
 
 const Home = ({ experiences, skills, projects, socials }: Props) => {
+  // useEffect(() => {
+  //   if (sessionStorage.getItem("reloaded") != null)
+  //     window.location.replace("/");
+  //   console.log(sessionStorage.getItem);
+  // }, []);
+
+  // if (!experiences && !skills && !projects && !socials) {
+  //   <div
+  //     className="w-12 h-12 rounded-full animate-spin
+  //                   border-y-2 border-solid border-blue-500 border-t-transparent"
+  //   ></div>;
+  // }
+
   return (
     <div className="bg-black text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 ">
       <Head>
@@ -35,31 +49,46 @@ const Home = ({ experiences, skills, projects, socials }: Props) => {
 
       <Header socials={socials} />
 
-      <section id="hero" className="snap-start">
+      <section
+        id="hero"
+        className="snap-start duration-300 ease-linear snap-proximity"
+      >
         <Hero />
       </section>
 
-      <section id="about" className="snap-center">
+      <section
+        id="about"
+        className="snap-center duration-300 ease-linear snap-proximity"
+      >
         <About />
       </section>
 
-      <section id="experience" className="snap-center">
+      <section
+        id="experience"
+        className="snap-center duration-300 ease-linear snap-proximity"
+      >
         <WorkExperience experiences={experiences} />
       </section>
 
-      <section id="skills" className="snap-start">
+      <section
+        id="skills"
+        className="snap-start duration-300 ease-linear snap-proximity"
+      >
         <Skills skills={skills} />
       </section>
 
-      <section id="projects" className="snap-start">
+      <section
+        id="projects"
+        className="snap-start duration-300 ease-linear snap-proximity"
+      >
         <Projects projects={projects} />
       </section>
 
-      <section id="testimonial" className="snap-start">
+      <section id="testimonial" className="snap-start snap-smooth">
         <Testimonial />
       </section>
 
-      <section id="contact-me" className="snap-start">
+      <section id="contact-me" className="snap-start snap-smooth">
         <ContactMe />
       </section>
 
