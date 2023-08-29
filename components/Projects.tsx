@@ -22,7 +22,7 @@ const Projects = ({ projects }: Props) => {
       <div className="relative w-full overflow-x-scroll snap-x snap-mandatory flex z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
         {projects.map((project, i) => (
           <div
-            key={i}
+            key={project._id}
             className="w-screen flex-shrink-0 snap-center items-center flex xs:flex-col sm:flex-col lg:flex-row xs:space-y-1 space-y-3 justify-center xs:px-8 sm:px-12 lg:px-20 xl:px-20 md:px-10 py-20 md:p-44 h-screen "
           >
             <motion.img
